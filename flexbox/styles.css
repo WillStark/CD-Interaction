@@ -4,3 +4,10 @@
   margin: 0;
   padding: 0;
 }
+
+div.row {
+  display: flex;
+}
+div {
+  width: 100%;
+}
