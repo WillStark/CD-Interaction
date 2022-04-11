@@ -1,6 +1,47 @@
-/* This changes three of the default styles and many webdesigners include this in the top of every style they create. */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+body {
+  margin: auto;
+  max-width: 95%;
+  background-color: black;
+
 }
+
+h1 {
+text-align: left;
+font-size: 15px;
+font-style: normal;
+font-family: 'Orbitron', sans-serif;
+color: white;
+}
+
+.gallerydiv {
+    width: 30%;
+}
+
+.galleryphoto {
+  width: 100%;
+
+}
+
+.caption {
+font-size: 12px;
+margin: auto;
+text-align: left;
+font-family: 'Orbitron', sans-serif;
+color: white;
+
+}
+
+#data_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 0px;
+
+}
+
+
+  }
