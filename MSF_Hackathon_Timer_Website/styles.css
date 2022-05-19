@@ -1,0 +1,109 @@
+:root {
+  --smaller: .75;
+}
+@font-face{
+  font-family:"CHANEY";
+  src:url("CHANEY-Wide.otf");
+}
+
+
+*
+{ font-family: "CHANEY";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+video#theVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  padding: 10px 16px;
+  color: #f1f1f1;
+  z-index: 2;
+}
+
+/*
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+}
+
+.container {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'CHANEY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
